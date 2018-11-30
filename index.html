@@ -1,0 +1,135 @@
+---
+layout: null
+title: OFH Automobile
+description: Frontpage
+sitemap:
+    priority: 1.0
+    lastmod: 2017-11-02
+    changefreq: weekly
+---
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+  Jekyll integration by somiibo.com
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+    {% include head.html %}
+
+
+	</head>
+	<body class="is-loading">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+            <h1>{{site.title}}</h1>
+						<h2>Ihr faires Autohaus in Schnaittach</h2>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+
+            {% include nav.html %}
+
+<!--
+						<ul class="icons">
+              <li><a href="https://twitter.com/{{site.twitter}}" class="icon fa-twitter" rel="nofollow"><span class="label">Twitter</span></a></li>
+              <li><a href="https://facebook.com/{{site.facebook}}" class="icon fa-facebook" rel="nofollow"><span class="label">Facebook</span></a></li>
+              <li><a href="https://instagram.com/{{site.instagram}}" class="icon fa-instagram" rel="nofollow"><span class="label">Instagram</span></a></li>
+              <li><a href="https://github.com/{{site.github}}" class="icon fa-github" rel="nofollow"><span class="label">GitHub</span></a></li>
+						</ul>
+-->
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<!-- Featured Post -->
+							<article class="post featured">
+                <object class="image main" data="/images/all-logos.svg" type="image/svg+xml">
+                  <img src="{{ "/images/all-logos.svg" | absolute_url }}" alt="" />
+                </object>
+								<header class="major">
+									<h3>Herzlich Willkommen bei OFH Automobile</h3>
+									<p>Wir sind Vertragshändler für <b>LADA</b> sowie Servicepartner von <b>Subaru</b></p>
+								</header>
+                <span class="image main"><img src="{{ "/images/neu-1.jpg" | absolute_url }}" alt="" /></span>
+								<h3>Wir bieten</h3>
+                <ul style="list-style: none;">
+								  <li> Über 30 Jahre Erfahrung im An- und Verkauf von Neu- und Gebrauchtwagen</li>
+                  <li> 2005-2017 größter oder 2. LADA-Händler in Deutschland</li>
+                  <li> Jahreswagen vieler Marken</li>
+                  <li> Qualifizierte Bewertung Ihres KFZ</li>
+                  <li> Verkauf im Kundenauftrag</li>
+                  <li> Finanzierung - Leasing</li>
+                  <li> Zulassungsdienst</li>
+                  <li> Gebraucht- und Neuwagengarantie</li>
+                  <li> Europaweite Beschaffung Ihres Wunschfahrzeuges</li>
+                </ul>
+								<h3>Unser Team</h3>
+                <span class="image main"><img src="{{ "/images/team-1.jpg" | absolute_url }}" alt="" /></span>
+							</article>
+
+						<!-- Posts -->
+							<section class="posts">
+                {% for post in site.posts limit:2 %}
+                {% assign mod3 = forloop.index | modulo: 3 %}
+  								<article>
+  									<header>
+  										<span class="date">{{ post.date | date_to_string }}</span>
+  										<h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
+  									</header>
+  									<a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
+  									<p>{{ post.excerpt }}</p>
+  									<ul class="actions">
+  										<li><a href="{{ post.url | absolute_url }}" class="button">Kompletter Artikel</a></li>
+  									</ul>
+  								</article>
+<!--
+                  {% if mod3 == 0 %}
+                  <article>
+  									<header>
+  										<h2><a href="#">Sponsored</a></h2>
+  									</header>
+
+  								</article>
+                  {% endif %}
+-->
+                {% endfor %}
+
+							</section>
+
+						<!-- Footer -->
+							<footer>
+                <ul class="actions">
+                  <li><a href="{{ "/" | absolute_url }}" class="button">Home</a></li>
+                </ul>
+							</footer>
+
+					</div>
+
+				<!-- Footer -->
+        {% include foot.html %}
+
+			</div>
+
+		<!-- Scripts -->
+		{% include scripts-main.html %}
+<!--
+    {% include tracking.html %}
+-->
+
+	</body>
+</html>
