@@ -1,0 +1,11 @@
+<ul class="links">
+  <li class="{% if page.url == "/" %} active {% endif %}"><a href="{{ "/" | absolute_url }}">Home</a></li>
+  <li><a href="http://home.mobile.de/home/index.html?partnerHead=false&colorTheme=default&customerId=457779" target="_blank">Automobile</a></li>
+  <li class="{% if page.url contains '/werkstatt/' %} active {% endif %}"><a href="{{ "/werkstatt/" | absolute_url }}">Werkstatt</a></li>
+  <li class="{% if page.url contains '/galerie/' %} active {% endif %}"><a href="{{ "/galerie/" | absolute_url }}">Galerie</a></li>
+  <li class="{% if page.url contains '/niva/' %} active {% endif %}"><a href="{{ "/niva/" | absolute_url }}">Niva</a></li>
+  <li class="{% if page.url contains '/anfahrt/' %} active {% endif %}"><a href="{{ "/anfahrt/" | absolute_url }}">Anfahrt</a></li>
+  <li class="{% if page.url contains '/partner/' %} active {% endif %}"><a href="{{ "/partner/" | absolute_url }}">Partner</a></li>
+  <li class="{% if page.url contains '/impressum/' %} active {% endif %}"><a href="{{ "/impressum/" | absolute_url }}">Impressum</a></li>
+  <li class="{% if page.url contains '/datenschutz/' %} active {% endif %}"><a href="{{ "/datenschutz/" | absolute_url }}">Datenschutz</a></li>
+</ul>
