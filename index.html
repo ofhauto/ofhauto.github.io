@@ -1,0 +1,174 @@
+---
+layout: null
+title: OFH Automobile
+description: Frontpage
+sitemap:
+    priority: 1.0
+    lastmod: 2017-11-02
+    changefreq: weekly
+---
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+  Jekyll integration by somiibo.com
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+    {% include head.html %}
+
+
+	</head>
+	<body class="is-loading">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+            <h1>{{site.title}}</h1>
+						<h2>Ihr faires Autohaus in Schnaittach</h2>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+
+            {% include nav.html %}
+
+<!--
+						<ul class="icons">
+              <li><a href="https://twitter.com/{{site.twitter}}" class="icon fa-twitter" rel="nofollow"><span class="label">Twitter</span></a></li>
+              <li><a href="https://facebook.com/{{site.facebook}}" class="icon fa-facebook" rel="nofollow"><span class="label">Facebook</span></a></li>
+              <li><a href="https://instagram.com/{{site.instagram}}" class="icon fa-instagram" rel="nofollow"><span class="label">Instagram</span></a></li>
+              <li><a href="https://github.com/{{site.github}}" class="icon fa-github" rel="nofollow"><span class="label">GitHub</span></a></li>
+						</ul>
+-->
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<!-- Featured Post -->
+							<article class="post featured">
+                <object class="image main" data="/images/all-logos.svg" type="image/svg+xml">
+                  <img src="{{ "/images/all-logos.svg" | absolute_url }}" alt="" />
+                </object>
+								<header class="major">
+									<h3>Herzlich Willkommen bei OFH Automobile</h3>
+									<p>Wir sind ein Familienunternehmen und haben uns vor 25 Jahren auf den Vertrieb von Allrad-Fahrzeugen spezialisiert. Unser Autohaus befindet sich im Herz des Schnaittachtals. Gut erreichbar sind wir über die A9, sowie auch über das Nürnberger Land. Mit freundlichen Grüßen, Ihr gesamtes Team von OFH-Automobile.</p>
+								</header>
+                <span class="image main"><img src="{{ "/images/new/aussen5.jpeg" | absolute_url }}" alt="" /></span>
+                <span class="image main"><img src="{{ "/images/new/aussen4.jpeg" | absolute_url }}" alt="" /></span>
+								<h2><b>Das faire SUBARU Autohaus</b> bietet Ihnen folgendes:</h3>
+                <h3>Wir verkaufen</h3>
+                <ul style="list-style: none;">
+                  <li>Lagerwagen von Lada, Subaru und Hyundai</li>
+                  <li>Tageszulassungen ohne Kilometer</li>
+                  <li>Jagd- und Forstfahrzeuge</li>
+                  <li>Schneeräumfahrzeuge</li>
+                  <li>Zugfahrzeuge mit 3,5 Tonnen Anhängelast</li>
+                  <li>Oldtimer</li>
+                  <li>"Meister geprüfte" Gebrauchtwagen</li>
+                  <li>Motorräder</li>
+                </ul>
+                <h3>Flexibilität durch</h3>
+                <ul style="list-style: none;">
+                  <li>Barverkauf</li>
+                  <li>Finanzierung (klassischer Kredit oder Ballon)</li>
+                  <li>Leasing (Privat und Gewerblich)</li>
+                  <li>Zulassungsdienst / Abmeldedienst</li>
+                  <li>Garantie für Neu- und Gebrauchtwagen</li>
+                  <li>Inzahlungnahme von "gepflegten Gebrauchtwagen"</li>
+                </ul>
+                <h3>Werkstatt und Service</h3>
+                <ul style="list-style: none;">
+                  <li>Schadenabwicklung</li>
+                  <li>Autoinstandsetzung aller Marken</li>
+                  <li>Mobilitätsgarantie</li>
+                  <li>Leihwagen</li>
+                  <li>Hol & Bring Service</li>
+                  <li>Abschleppservice</li>
+                  <li>Service rund um den Reifen</li>
+                </ul>
+                <h3>Was können Sie erwarten</h3>
+                <ul style="list-style: none;">
+                  <li>Hohe Qualität</li>
+                  <li>Flexibilität</li>
+                  <li>Großes Engagement</li>
+                  <li>Faire Preise</li>
+                  <li>Freundlichkeit und Hilfsbereitschaft</li>
+                </ul>
+								<h2>Unser Team</h3>
+                <span class="image main"><img src="{{ "/images/new/team5.jpeg" | absolute_url }}" alt="" /></span>
+                <h4>Valter Tempfli = Werkstatt Meister</h4>
+                <span class="image main"><img src="{{ "/images/new/team7.jpeg" | absolute_url }}" alt="" /></span>
+                <h4>Sebastian Kugler = KFZ Mechatroniker</h4>
+                <span class="image main"><img src="{{ "/images/mehmet.jpg" | absolute_url }}" alt="" /></span>
+                <h4>Mehmet Duman = Servicetechniker</h4>
+                <span class="image main"><img src="{{ "/images/new/team6.jpeg" | absolute_url }}" alt="" /></span>
+                <h4>Oliver Herchenbach = Verkauf und Werkstatt</h4>
+                <span class="image main"><img src="{{ "/images/new/baerbel.jpeg" | absolute_url }}" alt="" /></span>
+                <h4>Bärbel = Scharfer Wachhund</h4>
+                <span class="image main"><img src="{{ "/images/new/aussen6.jpg" | absolute_url }}" alt="" /></span>
+
+							</article>
+
+						<!-- Posts -->
+							<section class="posts">
+                {% for post in site.posts limit:2 %}
+                {% assign mod3 = forloop.index | modulo: 3 %}
+  								<article>
+  									<header>
+  										<span class="date">{{ post.date | date_to_string }}</span>
+  										<h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
+  									</header>
+  									<a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
+  									<p>{{ post.excerpt }}</p>
+  									<ul class="actions">
+  										<li><a href="{{ post.url | absolute_url }}" class="button">Kompletter Artikel</a></li>
+  									</ul>
+  								</article>
+<!--
+                  {% if mod3 == 0 %}
+                  <article>
+  									<header>
+  										<h2><a href="#">Sponsored</a></h2>
+  									</header>
+
+  								</article>
+                  {% endif %}
+-->
+                {% endfor %}
+
+							</section>
+
+						<!-- Footer -->
+							<footer>
+                <ul class="actions">
+                  <li><a href="{{ "/" | absolute_url }}" class="button">Home</a></li>
+                </ul>
+							</footer>
+
+					</div>
+
+				<!-- Footer -->
+        {% include foot.html %}
+
+			</div>
+
+		<!-- Scripts -->
+		{% include scripts-main.html %}
+<!--
+    {% include tracking.html %}
+-->
+
+	</body>
+</html>
