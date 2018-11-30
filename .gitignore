@@ -1,0 +1,10 @@
+_site
+_site/
+.sass-cache
+.jekyll-metadata
+.bundle/*
+vendor/*
+*~
+*.swp
+.DS_Store
+ruby/
