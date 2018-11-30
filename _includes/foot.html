@@ -1,0 +1,54 @@
+<footer id="footer">
+  <section>
+    <form method="POST" action="https://formspree.io/{{site.email}}">
+      <div class="field">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" />
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" name="_replyto" id="email" />
+      </div>
+      <div class="field">
+        <label for="message">Nachricht</label>
+        <textarea name="message" id="message" rows="3"></textarea>
+      </div>
+      <ul class="actions">
+        <li><input type="submit" value="Sende Nachricht" /></li>
+        <li><a href="/datenschutz#kontaktformular" target="_blank">Datenschutzhinweis</a></li>
+      </ul>
+    </form>
+  </section>
+  <section class="split contact">
+    <section class="alt">
+      <h3>Ort</h3>
+      <p>{{site.location}}</p>
+    </section>
+    <section>
+      <h3>Verkauf</h3>
+      <p><a href="tel:{{site.phone.verkauf}}"> {{site.phone.verkauf}}</a> Mo-Fr 8-18 Uhr | Samstag Nur auf Termin
+    </section>
+    <section>
+      <h3>Werkstatt</h3>
+      <p><a href="tel:{{site.phone.technik}}"> {{site.phone.technik}}</a> Mo-Do 8-12 und 13-17 Uhr | Fr 8-12 und 13-16 Uhr
+    </section>
+    <section>
+      <h3>Mobil</h3>
+      <p><a href="tel:{{site.phone.mobil}}"> {{site.phone.mobil}}</a>
+    </section>
+    <section>
+      <h3>Email</h3>
+      <p><a href="mailto:{{site.email}}"> {{site.email}}</a></p>
+    </section>
+  </section>
+</footer>
+<!-- Copyright -->
+<div id="copyright">
+  <ul>
+    <li>&copy; HTML5 UP</li>
+    <li>Design by <a href="https://html5up.net" rel="nofollow">HTML5 UP</a></li>
+    <li>Jekyll Integration by <a href="https://soundgrail.com">SoundGrail</a></li>
+    <li><a href="/impressum">Impressum</a></li>
+    <li><a href="/datenschutz">Datenschutz</a></li>
+  </ul>
+</div>
